@@ -1,0 +1,47 @@
+body{
+    background-color: beige;
+    font-family: monospace;
+}
+h1{
+    background-color:blanchedalmond;
+    font-size: 50px;
+}
+#openModel{
+    float: right;
+    margin: 10px;
+    margin-right: 15px;
+}
+
+p{
+    margin: 15px;
+    font-size: 20px;
+}
+
+@keyframes anim{
+    0%{margin-left: 0px;}
+    25%{margin-left: -300px;}
+    50%{margin-left: 0px}
+    75%{margin-left: 300px;}
+    100%{margin-left: 0px;}
+}
+#button{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes canv{
+    0%{box-shadow: 25px 35px 25px white;}
+    25%{box-shadow: 25px 35px 25px rgb(49, 49, 49);}
+    50%{box-shadow: 25px 35px 25px rgb(255, 255, 255);}
+    75%{box-shadow: 25px 35px 25px rgb(49, 49, 49);}
+    100%{box-shadow: 25px 35px 25px white;}
+}
+canvas{
+    box-shadow: 10px 10px 25px white;
+    border-radius: 25px;
+
+    animation-name: canv;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
